@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/julie/mmwave_realsense_mapping/catkin_ws/devel/setup.sh

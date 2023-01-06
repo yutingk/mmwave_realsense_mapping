@@ -1,0 +1,10 @@
+<launch>
+   <arg name="robot_name_1" default="boat1" />
+   <arg name="urdf" default="$(find sensor_tower)/urdf/sensor_tower.urdf" />
+      <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg urdf) robot_name:=$(arg robot_name_1)" />
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="robot_state_publisher" />
+</launch>
