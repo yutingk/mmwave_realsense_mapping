@@ -1,0 +1,6 @@
+catkin_ws/build
+  2 catkin_ws/devel
+  3 .vscode
+  4 .catkin_workspace
+  5 catkin_ws/src/CMakeLists.txt
+
