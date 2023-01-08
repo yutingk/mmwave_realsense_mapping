@@ -1,8 +1,0 @@
-prefix=/home/julie/mmwave_realsense_mapping/catkin_ws/devel
-
-Name: sensor_tower
-Description: Description of sensor_tower
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
