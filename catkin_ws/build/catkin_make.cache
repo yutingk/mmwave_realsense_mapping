@@ -1,2 +1,0 @@
-sensor_tower
--DCATKIN_DEVEL_PREFIX=/home/julie/mmwave_realsense_mapping/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/julie/mmwave_realsense_mapping/catkin_ws/install -DCATKIN_WHITELIST_PACKAGES=sensor_tower -G Unix Makefiles
