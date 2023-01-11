@@ -57,7 +57,20 @@ export ROS_MASTER_URI=http:/your ip:11311
 ```bash
 export ROS_HOSTNAME=your ip
 ```
-#### open mmwave
+#### set up mmwave (usually don't need to do these steps)
+To change the name of the port  for mmwave, we use the file in **~/duckiepond-nctu/script/99-robotx_port.rules** , and do that by the command only outside docker container.
+```bash
+$ source set_usb_port.sh
+```
+We can see the serial number by 
+```bash
+udevadm info --attribute-walk /dev/ttyUSB01
+```
+After changing, we can use the command to see it.
+```bash
+ $ ll |grep mm_ 
+ ```
+ #### open mmwave
 ```bash
 roslaunch ti_mmwave_rospkg multi_6843_2.launch veh:=husky2 serial:=00AB4BE1"
 ```
@@ -68,4 +81,5 @@ roslaunch ti_mmwave_rospkg multi_6843_3.launch veh:=husky2 serial:=00789E0C"
 ```bash
 roslaunch sensor_tower_description description_with_jackal.launch
 ```
+
 
