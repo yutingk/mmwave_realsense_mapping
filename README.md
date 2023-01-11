@@ -20,10 +20,18 @@ source realsense-apriltag-ros-jetson/catkin_ws/devel/setup.bash
 #### set up ROS_MASTER_URI and ROS_HOSTNAME
 ```bash
 export ROS_MASTER_URI=http://:11311
-ˋˋˋ
-ˋˋˋbash
+```
+```bash
 export ROS_HOSTNAME=
-ˋˋˋ
-ˋˋˋbash
-roslaunch realsense_apriltag rs_at.launch
-ˋˋˋ
+```
+#### Install launch file for pointcloud
+```bash
+sudo apt update
+```
+* for <distro> , we use melodic here. 
+```bash
+sudo apt install ros-<distro>-rgbd-launch 
+```
+```bash
+roslaunch realsense2_camera rs_rgbd.launch
+```
