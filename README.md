@@ -1,5 +1,5 @@
-# mmwave_realsense_mapping
-## Realsense d435 - repo : robotx-2022
+># mmwave_realsense_mapping
+>>## Realsense d435 - repo : robotx-2022
 #### Run docker 
 ```bash
 $ cd robotx-2022
@@ -28,11 +28,12 @@ export ROS_HOSTNAME=
 ```bash
 sudo apt update
 ```
-* for / distro / , we use melodic here. 
+* for **distro** , we use melodic here. 
 ```bash
 sudo apt install ros-<distro>-rgbd-launch 
 ```
 ```bash
 roslaunch realsense2_camera rs_rgbd.launch
 ```
-After setup, we can see pointcloud with rviz by the topic / camera/depth_registered/points /.
+After setup, we can see pointcloud with rviz by the topic **camera/depth_registered/points**
+
