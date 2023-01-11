@@ -1,5 +1,5 @@
-># mmwave_realsense_mapping
->>## Realsense d435 - repo : robotx-2022
+# mmwave_realsense_mapping
+## Realsense d435 - repo : robotx-2022
 #### Run docker 
 ```bash
 $ cd robotx-2022
@@ -19,10 +19,10 @@ source realsense-apriltag-ros-jetson/catkin_ws/devel/setup.bash
 ```
 #### set up ROS_MASTER_URI and ROS_HOSTNAME
 ```bash
-export ROS_MASTER_URI=http://:11311
+export ROS_MASTER_URI=http:/your ip:11311
 ```
 ```bash
-export ROS_HOSTNAME=
+export ROS_HOSTNAME=your ip
 ```
 #### Install launch file for pointcloud
 ```bash
@@ -36,4 +36,36 @@ sudo apt install ros-<distro>-rgbd-launch
 roslaunch realsense2_camera rs_rgbd.launch
 ```
 After setup, we can see pointcloud with rviz by the topic **camera/depth_registered/points**
+
+
+## mmWave - repo : duckiepont-nctu
+#### Run docker 
+```bash
+$ cd duckiepont-nctu
+```
+```bash
+$ source nano_run.sh
+```
+#### In docker container 
+```bash
+source environment.sh
+```
+#### set up ROS_MASTER_URI and ROS_HOSTNAME
+```bash
+export ROS_MASTER_URI=http:/your ip:11311
+```
+```bash
+export ROS_HOSTNAME=your ip
+```
+#### open mmwave
+```bash
+roslaunch ti_mmwave_rospkg multi_6843_2.launch veh:=husky2 serial:=00AB4BE1"
+```
+```bash
+roslaunch ti_mmwave_rospkg multi_6843_3.launch veh:=husky2 serial:=00789E0C"
+```
+#### open tf
+```bash
+roslaunch sensor_tower_description description_with_jackal.launch
+```
 
