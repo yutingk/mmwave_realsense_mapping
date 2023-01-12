@@ -28,7 +28,7 @@ export ROS_IP=your ip
 ```bash
 sudo apt update
 ```
-* for **distro** , we use melodic here. 
+* for **distro** , we use **melodic** here. 
 ```bash
 sudo apt install ros-<distro>-rgbd-launch 
 ```
