@@ -19,7 +19,7 @@ source realsense-apriltag-ros-jetson/catkin_ws/devel/setup.bash
 ```
 #### set up ROS_MASTER_URI and ROS_HOSTNAME
 ```bash
-export ROS_MASTER_URI=http:/your ip:11311
+export ROS_MASTER_URI=http://your ip:11311
 ```
 ```bash
 export ROS_HOSTNAME=your ip
