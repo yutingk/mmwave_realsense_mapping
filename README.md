@@ -2,10 +2,10 @@
 ## Realsense d435 - repo : robotx-2022
 #### Run docker 
 ```bash
-$ cd robotx-2022
+cd robotx-2022
 ```
 ```bash
-$ source Docker/nano-d435/docker_run.sh
+source Docker/nano-d435/docker_run.sh
 ```
 #### In docker container 
 ```bash
@@ -41,10 +41,10 @@ After setup, we can see pointcloud with rviz by the topic **camera/depth_registe
 ## mmWave - repo : duckiepont-nctu
 #### Run docker 
 ```bash
-$ cd duckiepont-nctu
+cd duckiepont-nctu
 ```
 ```bash
-$ source nano_run.sh
+source nano_run.sh
 ```
 #### In docker container 
 ```bash
@@ -60,7 +60,7 @@ export ROS_HOSTNAME=your ip
 #### set up mmwave (usually don't need to do these steps)
 To change the name of the port  for mmwave, we use the file in **~/duckiepond-nctu/script/99-robotx_port.rules** , and do that by the command only outside docker container.
 ```bash
-$ source set_usb_port.sh
+source set_usb_port.sh
 ```
 We can see the serial number by 
 ```bash
@@ -68,7 +68,7 @@ udevadm info --attribute-walk /dev/ttyUSB01
 ```
 After changing, we can use the command to see it.
 ```bash
- $ ll |grep mm_ 
+ll |grep mm_ 
  ```
  #### open mmwave
 ```bash
