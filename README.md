@@ -19,10 +19,10 @@ source realsense-apriltag-ros-jetson/catkin_ws/devel/setup.bash
 ```
 #### set up ROS_MASTER_URI and ROS_HOSTNAME
 ```bash
-export ROS_MASTER_URI=http://your ip:11311
+export ROS_MASTER_URI=http://your_ip:11311
 ```
 ```bash
-export ROS_IP=your ip
+export ROS_IP=your_ip
 ```
 #### Install launch file for pointcloud
 ```bash
@@ -52,10 +52,10 @@ source environment.sh
 ```
 #### set up ROS_MASTER_URI and ROS_HOSTNAME
 ```bash
-export ROS_MASTER_URI=http://your ip:11311
+export ROS_MASTER_URI=http://your_ip:11311
 ```
 ```bash
-export ROS_IP=your ip
+export ROS_IP=your_ip
 ```
 #### set up mmwave (usually don't need to do these steps)
 To change the name of the port  for mmwave, we use the file in **~/duckiepond-nctu/script/99-robotx_port.rules** , and do that by the command only outside docker container.
