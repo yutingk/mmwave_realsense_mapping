@@ -72,20 +72,23 @@ ll |grep mm_
  ```
  #### open mmwave
 ```bash
-roslaunch ti_mmwave_rospkg multi_6843_2.launch veh:=husky2 serial:=00AB4BE1"
+roslaunch ti_mmwave_rospkg multi_6843_2.launch veh:=husky2 serial:=00AB4BE1
 ```
 ```bash
-roslaunch ti_mmwave_rospkg multi_6843_3.launch veh:=husky2 serial:=00789E0C"
+roslaunch ti_mmwave_rospkg multi_6843_3.launch veh:=husky2 serial:=00789E0C
 ```
 #### open tf
 ```bash
 roslaunch sensor_tower_description description_with_jackal.launch
 ```
-#### process with mmwave pointcloud
+#### process with mmwave pointcloud & mapping pointcloud
 ```bash
-
+roslaunch lidar_crop d435_crop.launch
 ```
-#### mapping pointcloud
 ```bash
-
+roslaunch ti_mmwave_rospkg mmwave_d435_map.launch
+```
+### transfer poindcloud to laserscan
+```bash
+roslaunch subt_rl pcToLaser_mmwave.launch veh:=husky2
 ```
