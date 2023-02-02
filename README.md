@@ -92,3 +92,16 @@ roslaunch ti_mmwave_rospkg mmwave_d435_map.launch
 ```bash
 roslaunch subt_rl pcToLaser_mmwave.launch veh:=husky2
 ```
+### open LiDAR
+```bash
+roslaunch velodyne_pointcloud  VLP16_points_wamv.launch
+```
+## We need LiDAR to train the data or be the baseline
+### LiDAR crop & laserscan
+```bash
+roslaunch lidar_crop lidar_tower_crop.launch
+```
+## All commands can be replaced by the following command
+```bash
+source start_mmwave.launch
+```
