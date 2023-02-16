@@ -37,6 +37,21 @@ roslaunch realsense2_camera rs_rgbd.launch
 ```
 After setup, we can see pointcloud with rviz by the topic **camera/depth_registered/points**
 
+## Realsense d435 - repo : robotx-2022
+#### Run docker 
+```bash
+cd duckiepont-nctu
+```
+```bash
+source docker/nx-d435/docker_run.sh
+```
+#### In docker container 
+```bash
+source environment.sh
+```
+```bash
+roslaunch realsense2_camera rs_rgbd.launch
+```
 
 ## mmWave - repo : duckiepont-nctu
 #### Run docker 
