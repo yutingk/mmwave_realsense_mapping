@@ -81,5 +81,8 @@ roslaunch lidar_crop lidar_tower_crop.launch
 ```
 ## All commands can be replaced by the following command
 ```bash
+bot-procman-deputy
+```
+```bash
 source start_mmwave.launch
 ```
