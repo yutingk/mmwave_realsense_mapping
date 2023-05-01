@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot
+  name="realsense_tower">
+  <link
+    name="camera_base_link">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />  
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+  </link>
+
+  <link
+    name="left_link">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />  
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material> 
+    </visual>
+  </link>
+  <joint
+    name="left_joint"
+    type="fixed">
+    <origin
+      xyz="0 0.09485 0.02428"
+      rpy="0 0 0.968658" />
+    <parent
+      link="camera_base_link" />
+    <child
+      link="left_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="right_link">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+
+    </visual>
+  </link>
+  <joint
+    name="right_joint"
+    type="fixed">
+    <origin
+      xyz="0.0778 -0.1101 0.02428"
+      rpy="0 0 -0.968658" />
+    <parent
+      link="camera_base_link" />
+    <child
+      link="right_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+<link
+    name="middle_link">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+    </visual>
+  </link>
+  <joint
+    name="middle_joint"
+    type="fixed">
+    <origin
+      xyz="0.11049 0  0.02428"
+      rpy="0 0 0" />
+    <parent
+      link="camera_base_link" />
+    <child
+      link="middle_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+</robot>
